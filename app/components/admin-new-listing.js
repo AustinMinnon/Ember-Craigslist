@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         user: this.get('user') ? this.get('user') : "",
         email: this.get('email') ? this.get('email') : "",
         date: this.get('date') ? this.get('date') : "",
+        category: this.get('category') ? this.get('category') :""
       };
       this.set('addNewListing', false);
       this.sendAction('saveListing', params);

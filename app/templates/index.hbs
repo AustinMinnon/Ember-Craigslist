@@ -1,5 +1,4 @@
-
 <h2>Categories:</h2>
-{{#each model as |category|}}
-  {{category-tile category=category destroyCategory='destroyCategory'}}
+{{#each model.categories as |category|}}
+  {{admin-category-tile category=category update="update" destroyCategory='destroyCategory'}}
 {{/each}}
