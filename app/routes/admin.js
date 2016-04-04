@@ -25,7 +25,7 @@ export default Ember.Route.extend({
         }
       });
       category.save();
-      this.transitionTo('admin')
+      this.transitionTo('admin');
     },
     destroyListing(listing) {
       listing.destroyRecord();

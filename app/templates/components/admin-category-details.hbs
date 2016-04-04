@@ -1,11 +1,12 @@
 
 <h1>{{category.type}}</h1>
-{{#each category.listings as |listing|}}
+{{#each sortedListings as |listing|}}
 <h2>{{listing.title}}</h2>
 <h4>{{listing.user}}</h4>
 <h4>{{listing.email}}</h4>
 <h4>{{listing.date}}</h4>
 <h3>{{listing.body}}</h3>
+<hr>
 
 
 {{/each}}
