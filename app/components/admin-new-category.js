@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         type: this.get('type') ? this.get('type') : "",
       };
       this.set('addNewCategory', false);
-      this.sendAction('save', params);
+      this.sendAction('saveCategory', params);
     }
   }
 });

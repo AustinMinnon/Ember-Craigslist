@@ -1,0 +1,15 @@
+{{#if updateCategoryForm}}
+<h1>Update {{category.type}}</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="type">Type</label>
+          {{input value=type id="type" placeholder=category.type}}
+        </div>
+
+        <button {{action 'update' category}}>Update</button>
+      </form>
+    </div>
+{{else}}
+<button {{action 'categoryUpdateShow'}}>Update Category</button>
+{{/if}}

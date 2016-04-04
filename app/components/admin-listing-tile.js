@@ -2,12 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    update(category, params) {
-      this.sendAction('update', category, params);
-    },
-    delete(category) {
+    delete(listing) {
       if (confirm('Are you sure you want to delete this forever?')) {
-        this.sendAction('destroyCategory', category);
+        this.sendAction('destroyListing', listing);
       }
     }
   }

@@ -7,5 +7,25 @@
       "type": "sporting goods"
       }, {
       "type": "community"
-        }]
+        }],
+  "listings": [{
+    "title": "asdf",
+    "body": "listing here",
+    "user": "joe",
+    "email": "asdf@yahooo",
+    "date": "june 6, 2016"
+    }, {
+    "title": "fda",
+    "body": "listing here",
+    "user": "joe",
+    "email": "asdf@yahooo",
+    "date": "june 6, 2016"
+      }, {
+    "title": "fda",
+    "body": "listing here",
+    "user": "joe",
+    "email": "asdf@yahooo",
+    "date": "june 6, 2016"
+  }]
+
 }
