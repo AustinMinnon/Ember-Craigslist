@@ -36,5 +36,14 @@ export default Ember.Route.extend({
       newListing.save();
       this.transitionTo('admin');
     },
+    updateListing(listing, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !==undefined) {
+          listing.set(key, params[key]);
+        }
+      });
+      listing.save();
+      this.transitionTo('admin');
+    },
   }
 });

@@ -9,6 +9,7 @@
 <h2>Listings:</h2>
 {{#each model.listings as |listing|}}
 {{admin-listing-tile listing=listing destroyListing="destroyListing"}}
+{{admin-update-listing listing=listing updateListing="updateListing"}}
 {{/each}}
 
 {{admin-new-listing saveListing="saveListing"}}
