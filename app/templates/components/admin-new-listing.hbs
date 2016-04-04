@@ -9,7 +9,7 @@
 
         <div class="form-group">
           <label for="body">body</label>
-          {{input value=body id="body"}}
+          {{#bs-textarea value=body id="body"}}{{/bs-textarea}}
         </div>
 
         <div class="form-group">
@@ -24,7 +24,7 @@
 
         <div class="form-group">
           <label for="date">date</label>
-          {{input value=date id="date"}}
+          {{input type="date" value=date id="date"}}
         </div>
 
         <button {{action 'save'}}>Save</button>
