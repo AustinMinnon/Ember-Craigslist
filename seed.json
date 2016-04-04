@@ -1,0 +1,11 @@
+{
+  "categories": [{
+    "type": "electronics"
+    }, {
+      "type": "housing"
+      }, {
+      "type": "sporting goods"
+      }, {
+      "type": "community"
+        }]
+}

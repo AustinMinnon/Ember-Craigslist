@@ -6,5 +6,5 @@ export default DS.Model.extend({
   user: DS.attr(),
   email: DS.attr(),
   date: DS.attr(),
-  category: belongsTo('category', {async: true})
+  // category: belongsTo('category', {async: true})
 });

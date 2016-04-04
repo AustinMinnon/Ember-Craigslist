@@ -2,5 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   type: DS.attr(),
-  listings: hasMany('listing', {async: true})
+  // listings: hasMany('listing', {async: true})
 });
