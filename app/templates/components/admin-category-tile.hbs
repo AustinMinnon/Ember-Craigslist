@@ -1,4 +1,4 @@
 {{yield}}
-{{#link-to 'category' category.id}}{{category.type}}{{/link-to}}
+<p>{{#link-to 'category' category.id}}{{category.type}}{{/link-to}}</p>
 {{admin-update-category category=category update="update"}}
 <button class='btn btn-sm btn-danger' {{action 'delete' category}}>Delete Category</button>

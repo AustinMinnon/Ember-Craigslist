@@ -1,3 +1,3 @@
 {{yield}}
-<li>{{#link-to 'listing' listing.id}}{{listing.title}}{{listing.user}}{{listing.body}}{{listing.date}}{{/link-to}}</li>
+<p>{{#link-to 'listing' listing.id}}{{listing.title}} <br> {{listing.date}}{{/link-to}}</p>
 <button class='btn btn-sm btn-danger' {{action 'delete' listing}}>Delete Listing</button>

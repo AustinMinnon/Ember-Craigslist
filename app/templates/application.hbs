@@ -1,2 +1,6 @@
-{{outlet}}
-{{#link-to 'index'}}<button class='btn btn-sm btn-success'>Home</button>{{/link-to}}
+<div class="container">
+  <span>{{#link-to 'index'}}<button class='btn btn-lg btn-success'>Home</button>{{/link-to}}</span>
+  {{#link-to 'admin'}}<button class="btn btn-lg btn-success">Admin</button>{{/link-to}}
+<hr>
+  {{outlet}}
+</div>

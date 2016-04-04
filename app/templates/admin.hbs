@@ -1,15 +1,21 @@
 {{outlet}}
-<h2>Categories:</h2>
-{{#each model.categories as |category|}}
-  {{admin-category-tile category=category update="update" destroyCategory='destroyCategory'}}
-{{/each}}
 
-{{admin-new-category saveCategory="saveCategory"}}
+<div class="row">
+  <div class="col-sm-6">
+    <h2>Categories:</h2>
+    {{#each model.categories as |category|}}
+    <h2>{{admin-category-tile category=category update="update" destroyCategory='destroyCategory'}}</h2>
+    {{/each}}
+    {{admin-new-category saveCategory="saveCategory"}}
+  </div>
 
-<h2>Listings:</h2>
-{{#each model.listings as |listing|}}
-{{admin-listing-tile listing=listing destroyListing="destroyListing"}}
-{{admin-update-listing listing=listing updateListing="updateListing"}}
-{{/each}}
 
-{{admin-new-listing saveListing="saveListing"}}
+  <div class="col-sm-6">
+    <h2>Listings:</h2>
+    {{#each model.listings as |listing|}}
+    <h4>{{admin-listing-tile listing=listing destroyListing="destroyListing"}}</h4>
+    {{admin-update-listing listing=listing updateListing="updateListing"}}
+    {{/each}}
+    {{admin-new-listing saveListing="saveListing"}}
+  </div>
+</div>
